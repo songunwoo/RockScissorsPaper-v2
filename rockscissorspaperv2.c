@@ -34,13 +34,13 @@ int main() {
         system("cls");
         break;
     }
-        if(c == 'n' || c == 'N') {
-            exit(0);
-        }
-        else if(c != 'y' || c != 'n') {
-            system("cls");
-            printf("Please enter again...\n\n");
-        }
+    if(c == 'n' || c == 'N') {
+        exit(0);
+    }
+    else if(c != 'y' && c != 'n') {
+        system("cls");
+        printf("Please enter again...\n\n");
+    }
     }
     //continue or exit
 
