@@ -26,7 +26,7 @@ int main() {
     system("cls");
 
     while(1) {
-    printf("%s, you can play 3 games with AI.\n");
+    printf("%s, you can play 3 games with AI.\n", nname);
     printf("Continue this game?(y/n) ");
     scanf(" %c", &c);
 
@@ -37,7 +37,7 @@ int main() {
     if(c == 'n' || c == 'N') {
         exit(0);
     }
-    else if(c != 'y' && c != 'n') {
+    else if(c != 'y' && c != 'Y' && c != 'n' && c != 'N') {
         system("cls");
         printf("Please enter again...\n\n");
     }
@@ -124,10 +124,11 @@ int main() {
     }
     //a victory or defeat decision
     }
-    printf("\n              Result\n");
+    printf("\n\n              Result\n");
     line();
     printf("Game: %d, Win: %d, Draw: %d, Lose: %d\n", game, hw, draw, hl);
     line();
+    printf("\n\n");
     //final result
 
     return 0;
